@@ -1,3 +1,5 @@
+//the following code is a simple C++ program written in Sanskrit-like syntax
+
 #ifndef SANSKRIT_H
 #define SANSKRIT_H
 #include <iostream>

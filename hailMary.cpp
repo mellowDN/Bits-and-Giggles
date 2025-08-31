@@ -1,3 +1,6 @@
+//the following code is probably the worst sorting and searching algorithm ever created
+//it is called hail mary sort and hail mary search
+
 #include <bits/stdc++.h>
 using namespace std;
 void funShuffle(vector<int>& arr) {
