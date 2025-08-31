@@ -1,10 +1,8 @@
-//the following code is a simple C++ program written in Sanskrit-like syntax
+// the following code is a simple C++ program written in Sanskrit-like syntax
 
 #ifndef SANSKRIT_H
 #define SANSKRIT_H
-#include <iostream>
-#include <vector>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 //keywords
