@@ -1,4 +1,4 @@
-// the following code is probably the worst sorting and searching algorithm ever created
+// the following code is the best and the worst sorting and searching algorithm at the same time!
 // it is called hail mary sort and hail mary search
 
 #include <bits/stdc++.h>
@@ -6,12 +6,14 @@ using namespace std;
 void funShuffle(vector<int>& arr) {
     random_device rd;
     mt19937 g(rd());
-
+    int attempts=0;
     for (int i = arr.size() - 1; i > 0; i--) {
         uniform_int_distribution<> dist(0, i);
         int j = dist(g);
         swap(arr[i], arr[j]);
+        attempts++;
     }
+    
 }
 
 bool isSorted(vector<int>& nums){
@@ -22,9 +24,12 @@ bool isSorted(vector<int>& nums){
 }
 
 void hailMarySort(vector<int>& nums){
+    long long attempts=0;
     while(!isSorted(nums)){
         funShuffle(nums);
+        attempts++;
     }
+    cout<<"found in "<<attempts<<" attempts!"<<endl;
 }
 
 int hailMarySearch(vector<int>& nums, int target) {
